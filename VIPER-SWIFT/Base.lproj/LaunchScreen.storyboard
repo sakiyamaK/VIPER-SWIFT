@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hk4-Pi-PNa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="qyQ-Dz-6sR">
+            <objects>
+                <viewController id="hk4-Pi-PNa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aVg-Fw-4Ig">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="B2x-VV-BjQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JpJ-TI-Pzt" firstAttribute="trailing" secondItem="B2x-VV-BjQ" secondAttribute="trailing" id="1Gk-9V-k3W"/>
+                            <constraint firstItem="B2x-VV-BjQ" firstAttribute="leading" secondItem="JpJ-TI-Pzt" secondAttribute="leading" id="7I4-QI-Gkb"/>
+                            <constraint firstItem="JpJ-TI-Pzt" firstAttribute="bottom" secondItem="B2x-VV-BjQ" secondAttribute="bottom" id="vv4-Xn-ftz"/>
+                            <constraint firstItem="B2x-VV-BjQ" firstAttribute="top" secondItem="JpJ-TI-Pzt" secondAttribute="top" id="woU-gE-9ok"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JpJ-TI-Pzt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pou-Pg-G4J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="172" y="151"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splash" width="106.66666412353516" height="160"/>
+    </resources>
+</document>

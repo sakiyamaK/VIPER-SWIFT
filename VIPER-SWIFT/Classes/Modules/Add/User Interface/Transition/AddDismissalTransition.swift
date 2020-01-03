@@ -19,7 +19,7 @@ class AddDismissalTransition : NSObject, UIViewControllerAnimatedTransitioning {
         
         let finalCenter = CGPoint(x: 160.0, y: (fromVC.view.bounds.size.height / 2) - 1000.0)
         
-        let options = UIViewAnimationOptions.curveEaseIn
+        let options = UIView.AnimationOptions.curveEaseIn
         
         UIView.animate(withDuration: self.transitionDuration(using: transitionContext),
             delay: 0.0,

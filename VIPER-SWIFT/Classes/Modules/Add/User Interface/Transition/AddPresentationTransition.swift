@@ -33,7 +33,7 @@ class AddPresentationTransition: NSObject, UIViewControllerAnimatedTransitioning
         let finalCenter = CGPoint(x: fromVC.view.bounds.size.width / 2, y: 20 + toViewFrame.size.height / 2)
         toVC.view.center = CGPoint(x: finalCenter.x, y: finalCenter.y - 1000)
         
-        let options = UIViewAnimationOptions.curveEaseIn
+        let options = UIView.AnimationOptions.curveEaseIn
         
         UIView.animate(withDuration: self.transitionDuration(using: transitionContext),
             delay: 0.0,

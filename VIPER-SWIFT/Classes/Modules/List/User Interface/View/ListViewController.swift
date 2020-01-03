@@ -34,7 +34,7 @@ class ListViewController : UITableViewController, ListViewInterface {
     func configureView() {
         navigationItem.title = "VIPER TODO"
         
-        let addItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.add, target: self, action: #selector(ListViewController.didTapAddButton))
+        let addItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.add, target: self, action: #selector(ListViewController.didTapAddButton))
         
         navigationItem.rightBarButtonItem = addItem
     }
@@ -85,7 +85,7 @@ class ListViewController : UITableViewController, ListViewInterface {
         cell.textLabel?.text = upcomingItem.title;
         cell.detailTextLabel?.text = upcomingItem.dueDate;
         cell.imageView?.image = UIImage(named: upcomingSection!.imageName)
-        cell.selectionStyle = UITableViewCellSelectionStyle.none;
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none;
 
         return cell
     }
